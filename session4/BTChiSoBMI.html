@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let height =parseFloat(prompt(" insert Height (m)"));
+    let weight =parseFloat(prompt("insert Weight (Kg)"));
+    let BMI= weight/(height*height);
+    if(BMI<18.5) document.write("Under weight");
+    else
+        if (BMI >= 18.5 && BMI < 25.0) document.write("Nomal");
+        else if (BMI >= 25.0 && BMI < 30.0) document.write(" Overweight");
+         else document.write("Obese");
+</script>
+</body>
+</html>

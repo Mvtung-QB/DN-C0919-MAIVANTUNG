@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label>Do you love me?</label><br>
+<input type="button" id="btnYes" value="yes" onclick="eventClick()"/>
+<input type="button" id="btnNo" value="No" onmouseover="eventOnmouse()"/>
+</body>
+<script>
+    function eventClick() {
+        alert(" <3");
+    }
+    function eventOnmouse() {
+       let a= document.getElementById("btnNo");
+       a.style.position ="relative";
+       a.style.left = a.style.left + 15+"px";
+    }
+</script>
+</html>
