@@ -5,18 +5,23 @@
     <title>Title</title>
 </head>
 <body>
-<label>Do you love me?</label><br>
+<label ><B> you love me?</B></label><br>
 <input type="button" id="btnYes" value="yes" onclick="eventClick()"/>
-<input type="button" id="btnNo" value="No" onmouseover="eventOnmouse()"/>
+<input type="button" id="btnNo" value="No" onmouseover="eventOnmouse(this.id)"/>
+<input type="button" id="test" value="test" onmouseover="eventOnmouse(this.id)"/>
+
 </body>
 <script>
     function eventClick() {
         alert(" <3");
     }
-    function eventOnmouse() {
-       let a= document.getElementById("btnNo");
-       a.style.position ="relative";
-       a.style.left = a.style.left + 15+"px";
+    function eventOnmouse(idbutton) {
+        let x = Math.round(Math.random() * window.innerWidth);
+        let y = Math.round(Math.random() * window.innerHeight);
+        let a= document.getElementById(idbutton);
+        a.style.position="relative";
+        a.style.left = x+'px';
+        a.style.top = y+'px';
     }
 </script>
 </html>
