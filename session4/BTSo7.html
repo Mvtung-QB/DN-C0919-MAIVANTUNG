@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>// Tính tổng của 30 số chia hết cho 7 đầu tiên trong các số tự nhiên.
+    let tong =0;
+    let count =0;
+    let n=2;
+    let num=parseInt(prompt("tong cua bao nhieu so chia het cho 7?: "));
+    while (count<num) {
+            if (n % 7 == 0) {
+                count++;
+                tong += n;
+            }
+        n++;
+    }
+    document.write("Tong "+tong);
+</script>
+</body>
+</html>
