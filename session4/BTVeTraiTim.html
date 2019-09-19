@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // for(let i=-100; i<=100;i++){
+    //     for (let j=-100;j<100;j++){
+    //         let a=3/5*Math.pow(i,2/3)-j;// 3/5 * căn bậc 3 của x*x
+    //         if(Math.pow(i,2)+ 2*Math.pow(a,2)-1==0) //công thức
+    //             document.write("*");
+    //         else document.write("&nbsp;");
+    //     }
+    // }
+
+    for(let i=-100; i<=100;i++) {
+        for (let j = -100; j < 100; j++) {
+        let a= i*i+j*j-1;
+        if (Math.pow(a,3)-i*i*j*j*j==0)document.write("*");
+        else document.write("&nbsp;");
+        }document.write("<br>");
+    }
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label><b>Caro game </b></label><br>
+<input type="button" value="Change value" onclick="changvalue()"/><br>
+<p id ="incarro"></p>
+<script>
+    let caro=new Array();
+    let inCaro="";
+    for (let i=0; i<5;i++){
+        caro[i]=[0,0,0,0,0];
+    }
+    for (let i=0; i<caro.length;i++){
+        for (let j=0;j<caro.length;j++)
+            inCaro+=caro[i][j]+" ";
+        inCaro+= "<br>";
+    }
+    document.getElementById("incarro").innerHTML=inCaro;
+    function changvalue() {
+        inCaro="";
+        let x= parseInt(prompt("Enter X"));
+        let y= parseInt(prompt("Enter y"));
+        caro[x][y]="X";
+
+        for (let i=0; i<caro.length;i++){
+            for (let j=0;j<caro.length;j++)
+                inCaro+=caro[i][j]+" ";
+           inCaro+= "<br>";
+        }
+        document.getElementById("incarro").innerHTML=inCaro;
+    }
+</script>
+</body>
+</html>
