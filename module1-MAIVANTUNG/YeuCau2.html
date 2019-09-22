@@ -10,13 +10,13 @@
     let idCard= "194493512";
     let birthdayCustumer= "24/06/1992";
     let emailCustumer= "shane92mai@gmai.com";
-    let address= "Le thuy";
+    let address= "Đà Nẵng";
     let typeCustumer= "Gold";
     let discount= 10;
     let numberOfAccompanying= 5;
     let typeRoom= "Vip";
     let rentday= 5;
-    let typeService= "villa";
+    let typeService= "Villa";
     let totalPay= 500*rentday*(1-discount/100);
     let  choose= prompt("1: show my information \n"+
                         "2: Edit information \n"+
@@ -77,9 +77,41 @@
 
         break;
         case "3":
-
+            let moneyPerday=0;
+            if (typeService=="Villa")moneyPerday=500;
+            else if (typeService=="House") moneyPerday=300;
+                else moneyPerday=100;
+            let discountCondition=0;
+            //----------------------------
+            let currenYear = new Date().getFullYear();
+            let birthday= new Date(birthdayCustumer).getFullYear();
+            let ageCustumer = currenYear - birthday;
+            if (address ==="Đà Nẵng"){
+                discountCondition+=20;
+                if (ageCustumer>=30){
+                    discountCondition+=2;
+                }else if (ageCustumer>=20)
+                    discountCondition+=1;
+            }else if (address==="Huế")
+                discountCondition+=10;
+            else if (address==="Quảng Nam")
+                discountCondition+=5;
+            //=--------------------------
+            if  (typeCustumer=="Diamond")discountCondition+=15;
+            else if (typeCustumer=="Platium")discountCondition+=10;
+                else if (typeCustumer=="Gole")discountCondition+=5;
+                    else if (typeCustumer=="Sliver")discountCondition+=2;
+            //-----------------------------
+            if (rentday>=7)discountCondition+=30;
+            else if (rentday>=5)discountCondition+=20;
+                else if (rentday>=2)discountCondition+=10;
+            //---------------------------------
+            let totalPay= moneyPerday*rentday*(1- discount/100);
+            totalPay=totalPay-discountCondition;
+            alert("total pay after discount condition :" + totalPay);
             break;
         default:
+            alert("Failed!!!!!");
             break;
 
     }
