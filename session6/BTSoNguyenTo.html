@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    for (let i=2;i<=10000;i++){
+        if(check(i))document.write(i+" ");
+    }
+    function check(number) {
+        if (number===2)return true;
+        for (let i=2;i<=Math.sqrt(number);i++){
+            if (number%i===0) return false;
+        }
+        return true;
+    }
+
+</script>
+</body>
+</html>

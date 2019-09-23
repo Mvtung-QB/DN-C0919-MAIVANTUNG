@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label >Temperature Converter </label><br>
+<input type="text" id="txtValue"/><br>
+<input type="button" id="btnConvertFahrenheit" value="Convert to Fahrenheit" onclick="ChangerC()">
+<input type="button" id="btnConvertCelcius" value="Convert to Celcius" onclick="changerF()"><br>
+<p id="result"></p>
+<script>
+    function changerF() {
+        let number = document.getElementById("txtValue");
+        let f=parseFloat(number.value);
+        document.getElementById("result").innerHTML= " Celcius:" + (f - 32)/1.8;
+    }
+    function ChangerC() {
+        let number = document.getElementById("txtValue");
+        let c =parseFloat(number.value);
+        document.getElementById("result").innerHTML= "Fahrenheit: "+( 32+ 1.8*c);
+    }
+
+</script>
+</body>
+</html>
