@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="mycanvas" width="400" height="400" style="border: 1px solid #999999;"></canvas>
+<script>
+    let rectangle= function (height,width) {
+        this.width=width;
+        this.height=height;
+        this.perimeter = function () {
+            return (this.height+this.width)*2;
+        }
+        this.area =function () {
+            return this.height*this.height;
+        }
+        this.drawRectangle= function () {
+            let dr= document.getElementById("mycanvas");
+            let cn=dr.beginPath();
+            cn.rect(20,20,this.width,this.height);
+            cn.stroke();
+        }
+        new rectangle(20,30).drawRectangle();
+    }
+</script>
+</body>
+</html>

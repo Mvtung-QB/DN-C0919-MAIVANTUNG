@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body onload="run()">
+<center>
+<form>
+      <textarea id="text"  onkeydown="selection()"></textarea>
+</form>
+</center>
+<script>
+    let doc="Tôi là đứa ngốc! ";
+    let a= document.getElementById("text")
+    a.value="";
+    let n=0;
+    function selection() {
+        if (n<doc.length) {
+            a.value += doc[n];
+            n++;
+        }else {
+            a.value="";
+            n=0;
+        }
+    }
+</script>
+</body>
+</html>
