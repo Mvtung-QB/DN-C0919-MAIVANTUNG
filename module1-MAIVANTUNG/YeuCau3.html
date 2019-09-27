@@ -59,6 +59,49 @@
     let disCount;
     let rentday;
     let numberOfAccompanying;
+    let nameCustumer= prompt("enter your name");
+    nameCustumer=nameCustumer.trim().toLocaleLowerCase();
+    let name="";
+    for (let i=0;i<nameCustumer.length;i++){
+        if (nameCustumer.charAt(i)===" " && nameCustumer.charAt(i+1)===" ")
+            continue;
+        if (i===0 || nameCustumer.charAt(i-1)===" ") {
+            name += nameCustumer.charAt(i).toLocaleUpperCase();
+            continue;
+        }
+        name += nameCustumer.charAt(i);
+    }
+    nameCustumer=name;
+    //--------------------
+    let adress= prompt("enter your adress");
+        adress=adress.trim().toLocaleLowerCase();
+    let dc="";
+    for (let i=0;i<adress.length;i++){
+        if (adress.charAt(i)===" " && adress.charAt(i+1)===" ")
+            continue;
+        if (i===0 || adress.charAt(i-1)===" ") {
+            dc += adress.charAt(i).toLocaleUpperCase();
+            continue;
+        }
+        dc += adress.charAt(i);
+    }
+    adress=dc;
+//=--------------------
+//--------------------
+    let typeCustumer= prompt("enter your type Custumer");
+    typeCustumer=typeCustumer.trim().toLocaleLowerCase();
+    let type="";
+    for (let i=0;i<typeCustumer.length;i++){
+        if (typeCustumer.charAt(i)===" " && typeCustumer.charAt(i+1)===" ")
+            continue;
+        if (i===0 || typeCustumer.charAt(i-1)===" ") {
+            type += typeCustumer.charAt(i).toLocaleUpperCase();
+            continue;
+        }
+        type += typeCustumer.charAt(i);
+    }
+    typeCustumer=type;
+    //=--------------------
     do {
         checkvalidate=false;
         rentday=prompt("enter your rentday");

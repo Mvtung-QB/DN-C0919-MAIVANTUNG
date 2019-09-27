@@ -7,7 +7,7 @@
 <body onload="run()">
 <center>
 <form>
-      <textarea id="text"  onkeydown="selection()"></textarea>
+      <textarea id="text"  onkeydown="selection(event)"></textarea>
 </form>
 </center>
 <script>
@@ -15,13 +15,21 @@
     let a= document.getElementById("text")
     a.value="";
     let n=0;
-    function selection() {
-        if (n<doc.length) {
-            a.value += doc[n];
-            n++;
-        }else {
-            a.value="";
-            n=0;
+    function selection(e) {
+        if(e.which===8){
+            if (n>0){
+                a.value=a.value.substring(0,n-1);
+                n--;
+            }
+            else e.preventDefault();
+        }else
+            if (n<doc.length) {
+                e.preventDefault();
+                a.value += doc[n];
+                n++;
+            } else {
+                a.value="";
+                n=0;
         }
     }
 </script>

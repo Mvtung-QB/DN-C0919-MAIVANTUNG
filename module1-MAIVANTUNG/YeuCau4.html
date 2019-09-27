@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arrCustumer= new Array();
+    display();
+
+    // function run() {
+    //     window.addEventListener("keydown", selection);
+    // }
+function display() {
+    document.write("-----menu------ <br/>" +
+        "(1)delete custumer<br/>  " +
+        "(2)add custumer ");
+   window.addEventListener("keydown", selection);
+}
+function selection(chosse) {
+    switch (chosse.which) {
+        case 49:{
+            arrCustumer= deleteCustumer(arrCustumer);
+            printArrCustumer(arrCustumer);
+            display();
+        } break;
+        case 50:{
+            arrCustumer= addCustumer(arrCustumer);
+            printArrCustumer(arrCustumer);
+            display();
+        }break;
+    }
+}
+
+function deleteCustumer(arr) {
+        let name = prompt("enter your name do you want delete");
+    let n=0;
+    for (let i=0;i<arr,length;i++){
+        if (arr[i]== name){
+            arr= arr.splice(i,1);
+            n++;
+        }
+    }
+    if (n==0) alert("khong co");
+    return arr;
+}
+function addCustumer(arr) {
+        let num= parseInt(prompt("hay many custumer you can add"));
+        if (num>0){
+            let name="";
+            for (let i=0;i<num.length;i++){
+                 name = prompt("enter your name do you want to add");
+                arr.push(name);
+            }
+        }else alert("number is ivalid");
+   return  arr;
+}
+function printArrCustumer(arr) {
+    for (let i=0;i<arr.length;i++){
+        document.write(arr[i]+"<br/>");
+    }
+}
+</script>
+</body>
+</html>
