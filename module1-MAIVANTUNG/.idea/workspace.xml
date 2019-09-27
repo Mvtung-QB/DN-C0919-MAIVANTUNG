@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="083b9682-6da7-497c-95f7-eed7882cbb14" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/YeuCau4.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/YeuCau3.html" beforeDir="false" afterPath="$PROJECT_DIR$/YeuCau3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../session5/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../session5/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../session5/THFakingTextareaOnTyping.html" beforeDir="false" afterPath="$PROJECT_DIR$/../session5/THFakingTextareaOnTyping.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/YeuCau4.html" beforeDir="false" afterPath="$PROJECT_DIR$/YeuCau4.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,7 +27,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../session3/ThSuKienBanPhim.html" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../session7" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -60,6 +57,7 @@
       <workItem from="1569374763915" duration="50000" />
       <workItem from="1569385756883" duration="6787000" />
       <workItem from="1569510815676" duration="5648000" />
+      <workItem from="1569546887348" duration="5466000" />
     </task>
     <servers />
   </component>

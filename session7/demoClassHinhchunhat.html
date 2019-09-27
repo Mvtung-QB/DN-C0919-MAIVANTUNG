@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="txtdai" placeholder="chieu dai" />
+<input type="text" id="txtRong" placeholder="chieu rong" />
+<input type="button" id="btnSubmit" onclick="KetQua()" value="Tinh " />
+<p id="result"></p>
+
+<script type="text/javascript" src="scriptdemo.js"></script>
+<script>
+    function KetQua() {
+    let result="";
+    let chieuDai= document.getElementById("txtdai");
+    let chieuRong= document.getElementById("txtRong");
+        let hinhChuNhat = new HinhChuNhat(chieuDai.value*1, chieuRong.value*1);
+        result= "chu vi: "+ hinhChuNhat.chuVi()+" dien tich: "+ hinhChuNhat.dienTich();
+        document.getElementById("result").innerText =result;
+    }
+</script>
+</body>
+</html>

@@ -6,61 +6,72 @@
 </head>
 <body>
 <script>
-    let arrCustumer= new Array();
-    display();
-
-    // function run() {
-    //     window.addEventListener("keydown", selection);
-    // }
-function display() {
-    document.write("-----menu------ <br/>" +
-        "(1)delete custumer<br/>  " +
-        "(2)add custumer ");
-   window.addEventListener("keydown", selection);
-}
-function selection(chosse) {
-    switch (chosse.which) {
-        case 49:{
-            arrCustumer= deleteCustumer(arrCustumer);
-            printArrCustumer(arrCustumer);
-            display();
-        } break;
-        case 50:{
-            arrCustumer= addCustumer(arrCustumer);
-            printArrCustumer(arrCustumer);
-            display();
-        }break;
+        let arrCustumer= new Array();
+        let newArrayCustumer=["Long","Anh","Huy","Phuoc","Hung","An","Ngoc","Thanh","Tam","Hoa"];
+        display();
+    function display() {
+        document.write("-----menu------ <br/>" +
+            "(1)delete custumer<br/>  " +
+            "(2)add custumer <br/> ");
+       window.addEventListener("keydown", selection);
     }
-}
-
-function deleteCustumer(arr) {
-        let name = prompt("enter your name do you want delete");
-    let n=0;
-    for (let i=0;i<arr,length;i++){
-        if (arr[i]== name){
-            arr= arr.splice(i,1);
-            n++;
+    function selection(chosse) {
+        switch (chosse.which) {
+            case 49:{
+                arrCustumer = deleteCustumer(arrCustumer);
+                printArrCustumer(arrCustumer);
+                display();
+            } break;
+            case 50:{
+                arrCustumer= addCustumer(arrCustumer);
+                printArrCustumer(arrCustumer);
+                display();
+            }break;
         }
     }
-    if (n==0) alert("khong co");
-    return arr;
-}
-function addCustumer(arr) {
+
+    function deleteCustumer(arr) {
+        let name = prompt("enter your name do you want delete");
+        let n=0;
+        for (let i=0;i<arr.length;i++){
+            if (arr[i]=== name){
+                arr.splice(i,1);
+                n++;
+            }
+        }
+        if (n===0) alert("khong co");
+        return arr;
+    }
+
+    /**
+     * function over write delete custumer
+     * @param arr
+     * @returns {arr}
+     */
+    function overWriteDeleteCustumer(arr) {
+        let newArr= new Array();
+        printArrCustumer(arr);
+
+    }
+
+    function addCustumer(arr) {
         let num= parseInt(prompt("hay many custumer you can add"));
         if (num>0){
             let name="";
-            for (let i=0;i<num.length;i++){
+            for (let i=0;i<num;i++){
                  name = prompt("enter your name do you want to add");
                 arr.push(name);
             }
         }else alert("number is ivalid");
+        arr.sort();
    return  arr;
 }
-function printArrCustumer(arr) {
-    for (let i=0;i<arr.length;i++){
-        document.write(arr[i]+"<br/>");
+    function printArrCustumer(arr) {
+        for (let i=0;i<arr.length;i++){
+            document.write((i+1)+ " ."+arr[i]+"<br/>");
+        }
     }
-}
+
 </script>
 </body>
 </html>
