@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body onload="displayMainMenu()">
+<script type="text/javascript" src="Custumer.js"></script>
+<script>
+    let arrlistCustumer= new Array();
+    /**
+     * function display main menu
+     */
+    function displayMainMenu() {
+        document.write("----------main menu----------</br>" +
+                        "1 . Add new custumer.</br>" +
+                        "2 . Display Infomation Custumer.</br>" +
+                        "3 . Edit Information Custumer.</br>" +
+                        "3 . Delete Custumer.</br>" +
+                        "----------------------------------</br>");
+        window.addEventListener("keydown",selection)
+    }
+    /**
+     * function selection
+     */
+    function selection(chosse) {
+        switch (chosse.which) {
+            case 49:{
+                let custumer = new Custumer();
+                addNewCustumer(custumer);
+                arrlistCustumer.push(custumer);
+                displayMainMenu();
+            } break;
+            case 50:{
+                printArrCustumer(arrlistCustumer);
+                let num =Number.parseInt(prompt("select custumer you want show infomation"));
+                arrlistCustumer[num].displayInfomationCustomer();
+                displayMainMenu();
+            }break;
+            case 51:{
+                printArrCustumer(arrlistCustumer);
+                let num =Number.parseInt(prompt("select custumer you want Edit infomation"));
+                editCustomer(arrlistCustumer[num]);
+                arrlistCustumer[num].displayInfomationCustomer();
+                displayMainMenu();
+            }break;
+            case 52:{
+                printArrCustumer(arrlistCustumer);
+                let num =Number.parseInt(prompt("select custumer you want delete"));
+                arrlistCustumer.splice(num,1);
+                printArrCustumer(arrlistCustumer);
+                displayMainMenu();
+            }break;
+        }
+    }
+
+    /**
+     * function add new custumer
+     * @param custumer
+     * @return custumer
+     */
+    function addNewCustumer(custumer) {
+        custumer.setNameCustumer(prompt("Enter name custumer:"));
+        custumer.setIdCard(prompt("Enter idcard:"));
+        custumer.setBirthdayCustumer(prompt("Enter birthday Custumer:"));
+        custumer.setEmailCustumer(prompt("Enter Email:"));
+        custumer.setAddress( prompt("Enter address:"));
+        custumer.setTypeCustumer(prompt("Enter type custumer:"));
+        custumer.setDiscount(prompt("Enter disscount:"));
+        custumer.setNumberOfAccompanying( prompt("Enter number of accompanying:"));
+        custumer.setTypeRoom(prompt("Enter  type room:"));
+        custumer.setRentday(prompt("Enter rentday:"));
+        custumer.getSetTypeService(prompt("Enter type service:"));
+        return custumer;
+    }
+    function editCustomer (custumer) {
+        custumer.setNameCustumer(prompt("Enter name custumer:"));
+        custumer.setIdCard(prompt("Enter idcard:"));
+        custumer.setBirthdayCustumer(prompt("Enter birthday Custumer:"));
+        custumer.setEmailCustumer(prompt("Enter Email:"));
+        custumer.setAddress( prompt("Enter address:"));
+        custumer.setTypeCustumer(prompt("Enter type custumer:"));
+        custumer.setDiscount(prompt("Enter disscount:"));
+        custumer.setNumberOfAccompanying( prompt("Enter number of accompanying:"));
+        custumer.setTypeRoom(prompt("Enter  type room:"));
+        custumer.setRentday(prompt("Enter rentday:"));
+        custumer.getSetTypeService(prompt("Enter type service:"));
+        return custumer;
+    }
+
+    /**
+     * function print array custumer;
+     * @param arr
+     */
+    function printArrCustumer(arr) {
+
+        for (let i=0;i<arr.length;i++){
+            document.write((i+1)+ "Name: "+arr[i].nameCustumer+"ID: "+arr[i].idCard+"<br/>");
+        }
+    }
+
+</script>
+</body>
+</html>

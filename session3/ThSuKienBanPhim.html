@@ -11,22 +11,22 @@
     /////////////////////////////////////////
     function up() {
         let element = document.getElementById("nobita");
-        element.style.top = parseInt(element.style.top) + 5 + "px";
+        element.style.top = parseInt(element.style.top) - 5 + "px";
     }
 
     function down() {
         let element = document.getElementById("nobita");
-        element.style.top = parseInt(element.style.height) + 5 + "px";
+        element.style.top = parseInt(element.style.top) + 5 + "px";
     }
 
     function left() {
         let element = document.getElementById("nobita");
-        element.style.left = parseInt(element.style.left) + 5 + "px";
+        element.style.left = parseInt(element.style.left) - 5 + "px";
     }
 
     function right() {
         let element = document.getElementById("nobita");
-        element.style.left = parseInt(element.style.left) - 5 + "px";
+        element.style.left = parseInt(element.style.left) + 5 + "px";
     }
 
     //////////////////

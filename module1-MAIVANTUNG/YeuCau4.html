@@ -9,27 +9,35 @@
         let arrCustumer= new Array();
         let newArrayCustumer=["Long","Anh","Huy","Phuoc","Hung","An","Ngoc","Thanh","Tam","Hoa"];
         display();
+        /**
+         * function display menu
+         */
     function display() {
-        document.write("-----menu------ <br/>" +
+            printArrCustumer(newArrayCustumer);
+
+            document.write("-----menu------ <br/>" +
             "(1)delete custumer<br/>  " +
             "(2)add custumer <br/> ");
        window.addEventListener("keydown", selection);
     }
+
     function selection(chosse) {
         switch (chosse.which) {
             case 49:{
-                arrCustumer = deleteCustumer(arrCustumer);
-                printArrCustumer(arrCustumer);
+                newArrayCustumer = overWriteDeleteCustumer(newArrayCustumer);
                 display();
             } break;
             case 50:{
-                arrCustumer= addCustumer(arrCustumer);
-                printArrCustumer(arrCustumer);
+                newArrayCustumer= addCustumer(newArrayCustumer);
                 display();
             }break;
         }
     }
-
+    /**
+     * function delete custumer
+     * @param arr
+     * @return arr
+     */
     function deleteCustumer(arr) {
         let name = prompt("enter your name do you want delete");
         let n=0;
@@ -50,10 +58,28 @@
      */
     function overWriteDeleteCustumer(arr) {
         let newArr= new Array();
-        printArrCustumer(arr);
+        let num=0;
 
+        do {
+            num=Number.parseInt(prompt("choose a custumer"));
+            if(num > 0 && num < arr.length) {
+               newArr.push(arr[num-1]);
+               arr.splice(num-1, 1);
+            }else {
+                alert("Khong thay custumer");
+            }
+        }while (num<=0 ||num >arr.length);
+        document.write("custumer delete </br>");
+        printArrCustumer(newArr);
+        document.write("------------</br>");
+        return arr;
     }
 
+        /**
+         *function add custumer
+         * @param arr
+         * @returns {arr}
+         */
     function addCustumer(arr) {
         let num= parseInt(prompt("hay many custumer you can add"));
         if (num>0){
@@ -66,6 +92,11 @@
         arr.sort();
    return  arr;
 }
+
+        /**
+         * function print custumer
+         * @param arr
+         */
     function printArrCustumer(arr) {
         for (let i=0;i<arr.length;i++){
             document.write((i+1)+ " ."+arr[i]+"<br/>");

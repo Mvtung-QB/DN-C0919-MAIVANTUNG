@@ -17,13 +17,16 @@
             return this.height*this.height;
         }
         this.drawRectangle= function () {
-            let dr= document.getElementById("mycanvas");
-            let cn=dr.beginPath();
-            cn.rect(20,20,this.width,this.height);
-            cn.stroke();
+            let ctx= document.getElementById("mycanvas");
+            let c=ctx.getContext("2d");
+            c.beginPath();
+            c.rect(20,20,this.width,this.height);
+            c.stroke();
         }
-        new rectangle(20,30).drawRectangle();
     }
+    let rectang =new rectangle(45,200);
+    rectang.drawRectangle();
+    document.write(rectang.area());
 </script>
 </body>
 </html>
