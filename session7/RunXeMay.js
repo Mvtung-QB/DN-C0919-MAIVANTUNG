@@ -1,8 +1,8 @@
-let xe=new Xemay("xemay.PNG",0,0,50);
+let xe=new Xemay("xemay.PNG",300,200,50);
 document.getElementById('xemay').innerHTML = xe.getXemayElement();
-let status;
 runXeMay();
 function mouseSelection(e) {
+
     switch (e.which) {
         case 37:
             xe.moveLeft();

@@ -14,35 +14,36 @@ let line = function (x1, y1, x2, y2, obj) {
         this.y1 = y1;
         this.x2 = x2;
         this.y2 = y2;
+        // this.context= obj.getContext("2d");
         this.draw = function () {
+           // obj.lineWidth=1;
+            obj.lineCap="square";
             obj.moveTo(this.x1, this.y1);
             obj.lineTo(this.x2, this.y2);
             obj.stroke();
-        }
+        };
         this.moveLeft = function () {
-            this.update();
             this.x1 -=  5;
             this.x2 -= 5;
-            new line(this.x1,this.y1,this.x2,this.y2, ctx).draw();
-        }
+        };
         this.moveRight = function () {
-            this.update();
             this.x1 += 5;
             this.x2 += 5;
-            new line(this.x1,this.y1,this.x2,this.y2, ctx).draw();
-        }
-        this.update= function () {
-            obj.clearRect(this.x1,this.y1,this.x2,this.y2);
-        }
-    }
+        };
+
+    };
     function mouseSelection(e) {
         switch (e.which) {
             case 37: {
+                ctx.clearRect(50,180,180,180);
                 ln.moveLeft();
+                ln.draw();
             }
                 break;
             case 39: {
+                ctx.clearRect(ln.x1,ln.y1,ln.x2,ln.y2);
                 ln.moveRight();
+                ln.draw();
             }
                 break;
         }
@@ -51,6 +52,7 @@ let line = function (x1, y1, x2, y2, obj) {
         let c = document.getElementById("demoCanvas");
          ctx = c.getContext("2d");
         ln = new line(50, 180, 100, 180, ctx);
+
         ln.draw();
         window.addEventListener("keydown", mouseSelection);
     }

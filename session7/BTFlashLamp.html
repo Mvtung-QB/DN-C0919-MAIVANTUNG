@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script type="text/javascript" src="Battery.js"></script>
+<script>
+    let battery = new Battery();
+    battery.setEnergy(100);
+    let flash = new FlashLamp();
+    flash.setBattery(battery);
+    document.write("Battery info:" + flash.getbatteryInfor() + "<br/>");
+    flash.light();
+
+    document.write("Turn on<br/>")
+    flash.turnOn();
+    flash.light();
+    document.write("Battery info:" + flash.getbatteryInfor() + "<br/>");
+
+    document.write("Turn off<br/>")
+    flash.turnOff();
+    flash.light();
+</script>
+</body>
+</html>

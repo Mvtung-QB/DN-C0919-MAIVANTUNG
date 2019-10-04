@@ -15,22 +15,29 @@ var Xemay=function (image,top,left,size) {
     this.moveUP=function () {
          if (this.top > 0) {
              this.top -= 10;
-             setTimeout(this.moveUP,500);
          }
+        document.getElementById('xemay').innerHTML = this.getXemayElement();
+        setTimeout(this.moveUP,1000);
     }
     this.moveDown=function () {
          if(window.innerHeight-this.top>this.size) {
              this.top += 10;
          }
+        document.getElementById('xemay').innerHTML = this.getXemayElement();
+        setTimeout(this.moveDown,1000);
     }
     this.moveLeft=function () {
          if(this.left>0) {
              this.left -= 10;
          }
+        document.getElementById('xemay').innerHTML = this.getXemayElement();
+        setTimeout(this.moveLeft,1000);
     }
     this.moveRight=function () {
          if(window.innerWidth - this.left > this.size) {
              this.left += 10;
          }
+        document.getElementById('xemay').innerHTML = this.getXemayElement();
+        setTimeout(this.moveRight,1000);
     }
 }

@@ -6,201 +6,201 @@
 </head>
 <body>
 <script>
-//     let nameCustumer= prompt("Enter name custumer:");
-//     let filteidcard=/^\d\d\d\d\d\d\d\d\d$/;
-//     let filteEmail=/^\w\w\w+@\w\w\w+.\w\w\w$/;
-//     let filteBirthday=/^\d\d[/]\d\d[/]\d\d\d\d$/;
-//     let filteDiscount=/^[0-9]$/;
-//     let FilteNumberOfAccompanying=/^[0-9]$/;
-//     let FilteRentday =/^[0-9]$/;
-//      //-----------------------------------------------------
-//     let idCard;
-//     do {
-//          idCard = prompt("Enter idcard:");
-//     }while (!filteidcard.test(idCard));
-//     let emailCustumer;
-//     do{
-//         emailCustumer= prompt("Enter Email:");
-//     }while (!filteEmail.test(emailCustumer));
-//     let birthdayCustumer;
-//     do {
-//         birthdayCustumer = prompt("Enter birthday Custumer:");
-//
-//     }while (!filteBirthday.test(birthdayCustumer));
-// ////////////////////////
-//     let address= prompt("Enter address:");
-//     let typeCustumer= prompt("Enter type custumer:");
-//     //////////
-//     let discount;
-//     do {
-//         discount =prompt("Enter disscount:");
-//     }while (!filteDiscount.test(discount));
-//     /////////
-//     let numberOfAccompanying;
-//     do {
-//         numberOfAccompanying=parseInt(prompt("Enter number of accompanying:"));
-//     }while (!FilteNumberOfAccompanying.test(numberOfAccompanying));
-//
-//     let typeRoom= prompt("Enter  type room:");
-//     /////////
-//     let rentday;
-//     do {
-//         rentday=parseInt(prompt("Enter rentday:"));
-//     } while (!FilteRentday.test(rentday));
-//
-//     let typeService= prompt("Enter type service:");
-//     let totalPay= 500*parseInt(rentday)*(1- parseInt(discount)/100);
-
-
-    let checkvalidate =false;
-    let emailCustumer ;
-    let birthdayCustumer;
+    let nameCustumer= prompt("Enter name custumer:");
+    let filteidcard=/^[0-9]{9}$/;
+    let filteEmail=/^[a-z0-9sad]{5,32}@[a-z0-9]{2,}(\.[a-z0-9]{2,4}){1,2}$/;
+    let filteBirthday=/^([0-2][0-9]|(3)[0-1])(\/)(((0)[0-9])|((1)[0-2]))(\/)\d{4}$/;
+    let filteDiscount=/^[0-9]{1,3}$/;
+    let FilteNumberOfAccompanying=/^[0-9]{1,2}$/;
+    let FilteRentday =/^[0-9]{1,4}$/;
+     //-----------------------------------------------------
     let idCard;
+    do {
+         idCard = prompt("Enter idcard:");
+    }while (!filteidcard.test(idCard));
+    let emailCustumer;
+    do{
+        emailCustumer= prompt("Enter Email:");
+    }while (!filteEmail.test(emailCustumer));
+    let birthdayCustumer;
+    do {
+        birthdayCustumer = prompt("Enter birthday Custumer:");
+
+    }while (!filteBirthday.test(birthdayCustumer));
+////////////////////////
+    let address= prompt("Enter address:");
+    let typeCustumer= prompt("Enter type custumer:");
+    //////////
     let disCount;
-    let rentday;
+    do {
+        disCount =prompt("Enter disscount:");
+    }while (!filteDiscount.test(disCount));
+    /////////
     let numberOfAccompanying;
-    let nameCustumer= prompt("enter your name");
-    nameCustumer=nameCustumer.trim().toLocaleLowerCase();
-    let name="";
-    for (let i=0;i<nameCustumer.length;i++){
-        if (nameCustumer.charAt(i)===" " && nameCustumer.charAt(i+1)===" ")
-            continue;
-        if (i===0 || nameCustumer.charAt(i-1)===" ") {
-            name += nameCustumer.charAt(i).toLocaleUpperCase();
-            continue;
-        }
-        name += nameCustumer.charAt(i);
-    }
-    nameCustumer=name;
-    //--------------------
-    let adress= prompt("enter your adress");
-        adress=adress.trim().toLocaleLowerCase();
-    let dc="";
-    for (let i=0;i<adress.length;i++){
-        if (adress.charAt(i)===" " && adress.charAt(i+1)===" ")
-            continue;
-        if (i===0 || adress.charAt(i-1)===" ") {
-            dc += adress.charAt(i).toLocaleUpperCase();
-            continue;
-        }
-        dc += adress.charAt(i);
-    }
-    adress=dc;
-//=--------------------
-//--------------------
-    let typeCustumer= prompt("enter your type Custumer");
-    typeCustumer=typeCustumer.trim().toLocaleLowerCase();
-    let type="";
-    for (let i=0;i<typeCustumer.length;i++){
-        if (typeCustumer.charAt(i)===" " && typeCustumer.charAt(i+1)===" ")
-            continue;
-        if (i===0 || typeCustumer.charAt(i-1)===" ") {
-            type += typeCustumer.charAt(i).toLocaleUpperCase();
-            continue;
-        }
-        type += typeCustumer.charAt(i);
-    }
-    typeCustumer=type;
-    //=--------------------
     do {
-        checkvalidate=false;
-        rentday=prompt("enter your rentday");
-        if (!isNaN(rentday)){
-            rentday=Number.parseFloat(rentday);
-            if (rentday>=0 && Number.isInteger(rentday)){
-                checkvalidate =true;
-            }
-        }
-        if (!checkvalidate)alert("rentday is ivvalid");
-    }while (!checkvalidate);
+        numberOfAccompanying=parseInt(prompt("Enter number of accompanying:"));
+    }while (!FilteNumberOfAccompanying.test(numberOfAccompanying));
+
+    let typeRoom= prompt("Enter  type room:");
+    /////////
+    let rentday;
     do {
-        checkvalidate=false;
-        numberOfAccompanying=prompt("enter your number of accompanying");
-        if (!isNaN(numberOfAccompanying)){
-            numberOfAccompanying=Number.parseFloat(numberOfAccompanying);
-            if (numberOfAccompanying>=0&& Number.isInteger(numberOfAccompanying)){
-                checkvalidate=true;
-            }
-        }
-        if (!checkvalidate)alert("number of accompanying is ivvalid");
-    }while (!checkvalidate);
-    do {
-        checkvalidate=false;
-        disCount= prompt("enter your discount");
-        if (!isNaN(disCount)){
-            disCount=Number.parseFloat(disCount);
-            if (disCount>0)
-                checkvalidate=true ;
-        }
-        if (!checkvalidate)
-            alert("discount is ivvalid");
-    }while (!checkvalidate);
-    do {
-        checkvalidate=true;
-        idCard=prompt("enter your IDcard");
-        if (isNaN(idCard)){
-            alert("idCard is ivvalid");
-            continue;
-        }
-        idCard=Number.parseFloat(idCard);
-        if (!Number.isInteger(idCard)){
-            alert("idCard is ivvalid");
-            continue;
-        }
-        if (idCard>=100000000 && idCard<=999999999){
-            checkvalidate=true;
-        }else alert("idCard is ivvalid");
-    }while (!checkvalidate);
-    do {
-        checkvalidate=false ;
-        birthdayCustumer= prompt("enter your birthday (mm/dd/yyyy)");
-        if (birthdayCustumer.charAt(2)!=="/" || birthdayCustumer.charAt(5)!=="/"){
-            alert("Birthday ivalid");
-            continue;
-        }
-        let day=birthdayCustumer.substring(0,2);
-        let month = birthdayCustumer.substring(3,5);
-        let year = birthdayCustumer.substring(6,10);
-        if (!isNaN(day) && !isNaN(month) && !isNaN(year)){
-            day=Number.parseFloat(day);
-            month=Number.parseFloat(month);
-            year =Number.parseFloat(year);
-            if (Number.isInteger(day)&&Number.isInteger(month)&&Number.isInteger(year) ){
-                if (day>0 && day<32 && month>0 && month<13 && year>1950 && year<2019){
-                    checkvalidate=true;
-                }
-            }
-        }
-        if (!checkvalidate)
-                alert("birthday ivalid");
-    }while (!checkvalidate);
-    do {
-        checkvalidate=true;
-        emailCustumer= prompt("enter your email");
-        let countDot=0;
-        let countAt=0;
-        for (let i=0;i<emailCustumer.length-1;i++){
-            if(emailCustumer.charAt(i)==="@")countAt++;
-            if (emailCustumer.charAt(i)===".")countDot++;
-        }
-        if (countDot<1||countAt!==1) {
-            checkvalidate = false;
-            alert("Emaill ivalid");
-        }
-    }while (!checkvalidate);
+        rentday=parseInt(prompt("Enter rentday:"));
+    } while (!FilteRentday.test(rentday));
+
+    let typeService= prompt("Enter type service:");
+    let totalPay= 500*parseInt(rentday)*(1- parseInt(disCount)/100);
+
+//
+//     let checkvalidate =false;
+//     let emailCustumer ;
+//     let birthdayCustumer;
+//     let idCard;
+//     let disCount;
+//     let rentday;
+//     let numberOfAccompanying;
+//     let nameCustumer= prompt("enter your name");
+//     nameCustumer=nameCustumer.trim().toLocaleLowerCase();
+//     let name="";
+//     for (let i=0;i<nameCustumer.length;i++){
+//         if (nameCustumer.charAt(i)===" " && nameCustumer.charAt(i+1)===" ")
+//             continue;
+//         if (i===0 || nameCustumer.charAt(i-1)===" ") {
+//             name += nameCustumer.charAt(i).toLocaleUpperCase();
+//             continue;
+//         }
+//         name += nameCustumer.charAt(i);
+//     }
+//     nameCustumer=name;
+//     //--------------------
+//     let adress= prompt("enter your adress");
+//         adress=adress.trim().toLocaleLowerCase();
+//     let dc="";
+//     for (let i=0;i<adress.length;i++){
+//         if (adress.charAt(i)===" " && adress.charAt(i+1)===" ")
+//             continue;
+//         if (i===0 || adress.charAt(i-1)===" ") {
+//             dc += adress.charAt(i).toLocaleUpperCase();
+//             continue;
+//         }
+//         dc += adress.charAt(i);
+//     }
+//     adress=dc;
+// //=--------------------
+// //--------------------
+//     let typeCustumer= prompt("enter your type Custumer");
+//     typeCustumer=typeCustumer.trim().toLocaleLowerCase();
+//     let type="";
+//     for (let i=0;i<typeCustumer.length;i++){
+//         if (typeCustumer.charAt(i)===" " && typeCustumer.charAt(i+1)===" ")
+//             continue;
+//         if (i===0 || typeCustumer.charAt(i-1)===" ") {
+//             type += typeCustumer.charAt(i).toLocaleUpperCase();
+//             continue;
+//         }
+//         type += typeCustumer.charAt(i);
+//     }
+//     typeCustumer=type;
+//     //=--------------------
+//     do {
+//         checkvalidate=false;
+//         rentday=prompt("enter your rentday");
+//         if (!isNaN(rentday)){
+//             rentday=Number.parseFloat(rentday);
+//             if (rentday>=0 && Number.isInteger(rentday)){
+//                 checkvalidate =true;
+//             }
+//         }
+//         if (!checkvalidate)alert("rentday is ivvalid");
+//     }while (!checkvalidate);
+//     do {
+//         checkvalidate=false;
+//         numberOfAccompanying=prompt("enter your number of accompanying");
+//         if (!isNaN(numberOfAccompanying)){
+//             numberOfAccompanying=Number.parseFloat(numberOfAccompanying);
+//             if (numberOfAccompanying>=0&& Number.isInteger(numberOfAccompanying)){
+//                 checkvalidate=true;
+//             }
+//         }
+//         if (!checkvalidate)alert("number of accompanying is ivvalid");
+//     }while (!checkvalidate);
+//     do {
+//         checkvalidate=false;
+//         disCount= prompt("enter your discount");
+//         if (!isNaN(disCount)){
+//             disCount=Number.parseFloat(disCount);
+//             if (disCount>0)
+//                 checkvalidate=true ;
+//         }
+//         if (!checkvalidate)
+//             alert("discount is ivvalid");
+//     }while (!checkvalidate);
+//     do {
+//         checkvalidate=true;
+//         idCard=prompt("enter your IDcard");
+//         if (isNaN(idCard)){
+//             alert("idCard is ivvalid");
+//             continue;
+//         }
+//         idCard=Number.parseFloat(idCard);
+//         if (!Number.isInteger(idCard)){
+//             alert("idCard is ivvalid");
+//             continue;
+//         }
+//         if (idCard>=100000000 && idCard<=999999999){
+//             checkvalidate=true;
+//         }else alert("idCard is ivvalid");
+//     }while (!checkvalidate);
+//     do {
+//         checkvalidate=false ;
+//         birthdayCustumer= prompt("enter your birthday (mm/dd/yyyy)");
+//         if (birthdayCustumer.charAt(2)!=="/" || birthdayCustumer.charAt(5)!=="/"){
+//             alert("Birthday ivalid");
+//             continue;
+//         }
+//         let day=birthdayCustumer.substring(0,2);
+//         let month = birthdayCustumer.substring(3,5);
+//         let year = birthdayCustumer.substring(6,10);
+//         if (!isNaN(day) && !isNaN(month) && !isNaN(year)){
+//             day=Number.parseFloat(day);
+//             month=Number.parseFloat(month);
+//             year =Number.parseFloat(year);
+//             if (Number.isInteger(day)&&Number.isInteger(month)&&Number.isInteger(year) ){
+//                 if (day>0 && day<32 && month>0 && month<13 && year>1950 && year<2019){
+//                     checkvalidate=true;
+//                 }
+//             }
+//         }
+//         if (!checkvalidate)
+//                 alert("birthday ivalid");
+//     }while (!checkvalidate);
+//     do {
+//         checkvalidate=true;
+//         emailCustumer= prompt("enter your email");
+//         let countDot=0;
+//         let countAt=0;
+//         for (let i=0;i<emailCustumer.length-1;i++){
+//             if(emailCustumer.charAt(i)==="@")countAt++;
+//             if (emailCustumer.charAt(i)===".")countDot++;
+//         }
+//         if (countDot<1||countAt!==1) {
+//             checkvalidate = false;
+//             alert("Emaill ivalid");
+//         }
+//     }while (!checkvalidate);
     alert("information custumer: \n"+
-    //    "Name"+nameCustumer +
+        "Name"+nameCustumer +
         "\n id card: "+idCard+
         "\n birthday: "+birthdayCustumer+
         "\n discount: "+disCount+
         "\n Email: "+emailCustumer+
-     //   "\n Address: "+address+
-      //  "\n type custumer: "+typeCustumer+
-      //  "\n numer of accompanying: "+numberOfAccompanying+
-      //  "\n type room: "+typeRoom+
-        "\n rentday: "+rentday
-     //   "\n type service: "+typeService+
-      //  "\n totalpay: "+totalPay
+      "\n Address: "+address+
+        "\n type custumer: "+typeCustumer+
+        "\n numer of accompanying: "+numberOfAccompanying+
+       "\n type room: "+typeRoom+
+        "\n rentday: "+rentday+
+      "\n type service: "+typeService+
+        "\n totalpay: "+totalPay
     )
 </script>
 </body>
