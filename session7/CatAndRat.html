@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script type="text/javascript" src="CatAndRat.js"></script>
+<script>
+    let rat = new Rat();
+    rat.setStatus(false);
+    rat.setSpeed(10);
+    let cat = new Cat();
+    cat.setSpeed(20);
+    if (cat.Capture(rat)){
+        if(cat.eat(rat)){
+            alert("an xong roi");
+        }else alert("Chuột chết ko muốn ăn");
+    } else alert("Chuột chạy quá nhannh");
+</script>
+</body>
+</html>

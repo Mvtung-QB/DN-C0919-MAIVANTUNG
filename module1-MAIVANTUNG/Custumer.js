@@ -71,15 +71,15 @@ let Custumer = function () {
      */
     this.displayInfomationCustomer=function () {
         document.write("information custumer: </br>" +
-            "Name: "+this.nameCustumer +"</br>" +
-            "id card:"+this.idCard +"</br>"+
-            "birthday:"+this.birthdayCustumer+"</br>" +
-            "Email:"+this.emailCustumer+"</br>"+
-            "Address:"+this.address+"</br>" +
-            "type custumer:"+this.typeCustumer+"</br>"+
-            "numer of accompanying:"+this.numberOfAccompanying+"</br>"+
-            "type room:"+this.typeRoom +"</br>"+
-            "rentday:"+this.rentday+"</br>"+
-            "type service:"+this.typeService+"</br>");
+            "1.Name: "+this.nameCustumer +"</br>" +
+            "2.id card:"+this.idCard +"</br>"+
+            "3.birthday:"+this.birthdayCustumer+"</br>" +
+            "4.Email:"+this.emailCustumer+"</br>"+
+            "5.Address:"+this.address+"</br>" +
+            "6.type custumer:"+this.typeCustumer+"</br>"+
+            "7.numer of accompanying:"+this.numberOfAccompanying+"</br>"+
+            "8.type room:"+this.typeRoom +"</br>"+
+            "9.rentday:"+this.rentday+"</br>"+
+            "10.type service:"+this.typeService+"</br>");
     }
 }

@@ -50,9 +50,6 @@ let Cat = function () {
     this.setStatus = function (status) {
         this.status = status;
     }
-    this.getStatus = function () {
-        return this.status;
-    }
     this.said = function (mess) {
         return mess;
     }
@@ -62,5 +59,12 @@ let Cat = function () {
         }
         return false;
     }
-    this.eat
+    this.eat = function (rat) {
+        if (rat.getStatus()==true ){
+            this.weigh++;
+            return true;
+        }
+
+        return  false;
+    }
 }

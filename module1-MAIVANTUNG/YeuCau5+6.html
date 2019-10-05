@@ -21,6 +21,7 @@
                         "4 . Delete Custumer.</br>" +
                         "5 . Add new Employee.</br>" +
                         "----------------------------------</br>");
+        printArrCustumer(arrlistCustumer);
         window.addEventListener("keydown",selection)
     }
     /**
@@ -35,30 +36,25 @@
                 displayMainMenu();
             } break;
             case 50:{
-                printArrCustumer(arrlistCustumer);
                 let num =Number.parseInt(prompt("select custumer you want show infomation"));
                 arrlistCustumer[num].displayInfomationCustomer();
                 displayMainMenu();
             }break;
             case 51:{
-                printArrCustumer(arrlistCustumer);
                 let num =Number.parseInt(prompt("select custumer you want Edit infomation"));
                 editCustomer(arrlistCustumer[num]);
                 arrlistCustumer[num].displayInfomationCustomer();
                 displayMainMenu();
             }break;
             case 52:{
-                printArrCustumer(arrlistCustumer);
                 let num =Number.parseInt(prompt("select custumer you want delete"));
                 arrlistCustumer.splice(num,1);
-                printArrCustumer(arrlistCustumer);
                 displayMainMenu();
             }break;
             case 53:{
                 let employee = new Employee();
                 addNewEmployee(employee);
                 arrlistEmployee.push(employee);
-                printArrEmployee(arrlistEmployee);
                 displayMainMenu();
             }break;
         }
@@ -70,7 +66,6 @@
      * @return custumer
      */
     function addNewCustumer(custumer) {
-        let nameCustumer= prompt("Enter name custumer:");
         let filteidcard=/^[0-9]{9}$/;
         let filteEmail=/^[a-z0-9sad]{5,32}@[a-z0-9]{2,}(\.[a-z0-9]{2,4}){1,2}$/;
         let filteBirthday=/^([0-2][0-9]|(3)[0-1])(\/)(((0)[0-9])|((1)[0-2]))(\/)\d{4}$/;
@@ -78,39 +73,39 @@
         let FilteNumberOfAccompanying=/^[0-9]{1,2}$/;
         let FilteRentday =/^[0-9]{1,4}$/;
         //-----------------------------------------------------
+        custumer.setNameCustumer(prompt("enter name custumer"));
         do {
-            custumer.idCard = prompt("Enter idcard:");
-        }while (!filteidcard.test(custumer.idCard));
+            custumer.setIdCard(prompt("Enter idcard:"));
+        }while (!filteidcard.test(custumer.getIdCard()));
         do{
-            custumer.emailCustumer= prompt("Enter Email:");
-        }while (!filteEmail.test( custumer.emailCustumer));
+            custumer.setEmailCustumer(prompt("Enter Email:"));
+        }while (!filteEmail.test( custumer.getEmailCustumer()));
         do {
-            custumer.birthdayCustumer = prompt("Enter birthday Custumer:");
+            custumer.setBirthdayCustumer(prompt("Enter birthday Custumer:"));
 
-        }while (!filteBirthday.test(custumer.birthdayCustumer));
+        }while (!filteBirthday.test(custumer.getBirthdayCustumer()));
         ////////////////////////
-        custumer.address= prompt("Enter address:");
-        custumer.typeCustumer= prompt("Enter type custumer:");
+        custumer.setAddress( prompt("Enter address:"));
+        custumer.setTypeCustumer(prompt("Enter type custumer:"));
         //////////
         do {
-           custumer.disCount =prompt("Enter disscount:");
-        }while (!filteDiscount.test(custumer.disCount));
+           custumer.setDiscount(prompt("Enter disscount:"));
+        }while (!filteDiscount.test(custumer.getDiscount()));
         /////////
         do {
-            custumer.numberOfAccompanying=parseInt(prompt("Enter number of accompanying:"));
-        }while (!FilteNumberOfAccompanying.test(custumer.numberOfAccompanying));
+            custumer.setNumberOfAccompanying(parseInt(prompt("Enter number of accompanying:")));
+        }while (!FilteNumberOfAccompanying.test(custumer.getNumberOfAccompanying()));
 
-        let typeRoom= prompt("Enter  type room:");
+        custumer.setTypeRoom( prompt("Enter  type room:"));
         ////////
         do {
-            custumer.rentday=parseInt(prompt("Enter rentday:"));
-        } while (!FilteRentday.test(custumer.rentday));
+            custumer.setRentday(parseInt(prompt("Enter rentday:")));
+        } while (!FilteRentday.test(custumer.getRentday()));
 
         custumer.getSetTypeService(prompt("Enter type service:"));
         return custumer;
     }
     function editCustomer (custumer) {
-        let nameCustumer= prompt("Enter name custumer:");
         let filteidcard=/^[0-9]{9}$/;
         let filteEmail=/^[a-z0-9sad]{5,32}@[a-z0-9]{2,}(\.[a-z0-9]{2,4}){1,2}$/;
         let filteBirthday=/^([0-2][0-9]|(3)[0-1])(\/)(((0)[0-9])|((1)[0-2]))(\/)\d{4}$/;
@@ -118,36 +113,35 @@
         let FilteNumberOfAccompanying=/^[0-9]{1,2}$/;
         let FilteRentday =/^[0-9]{1,4}$/;
         //-----------------------------------------------------
-        do {
-            custumer.idCard = prompt("Enter idcard:");
-        }while (!filteidcard.test(custumer.idCard));
-        do{
-            custumer.emailCustumer= prompt("Enter Email:");
-        }while (!filteEmail.test( custumer.emailCustumer));
-        do {
-            custumer.birthdayCustumer = prompt("Enter birthday Custumer:");
+        window.addEventListener("keydown", function (e) {
+            switch (e.which) {
+                case 49:custumer.setNameCustumer(prompt("Enter name custumer:"));break;
+                case 50:do {
+                    custumer.idCard = prompt("Enter idcard:");
+                }while (!filteidcard.test(custumer.getIdCard()));break;
+                case 51:do{
+                    custumer.emailCustumer= prompt("Enter Email:");
+                }while (!filteEmail.test( custumer.getEmailCustumer()));break;
+                case 52:do {
+                    custumer.birthdayCustumer = prompt("Enter birthday Custumer:");
 
-        }while (!filteBirthday.test(custumer.birthdayCustumer));
-        ////////////////////////
-        custumer.address= prompt("Enter address:");
-        custumer.typeCustumer= prompt("Enter type custumer:");
-        //////////
-        do {
-            custumer.disCount =prompt("Enter disscount:");
-        }while (!filteDiscount.test(custumer.disCount));
-        /////////
-        do {
-            custumer.numberOfAccompanying=parseInt(prompt("Enter number of accompanying:"));
-        }while (!FilteNumberOfAccompanying.test(custumer.numberOfAccompanying));
-
-        let typeRoom= prompt("Enter  type room:");
-        ////////
-        do {
-            custumer.rentday=parseInt(prompt("Enter rentday:"));
-        } while (!FilteRentday.test(custumer.rentday));
-
-        custumer.getSetTypeService(prompt("Enter type service:"));
-        return custumer;
+                }while (!filteBirthday.test(custumer.getBirthdayCustumer()));break;
+                case 53:custumer.setAddress(prompt("Enter address:"));break;
+                case 54:custumer.setTypeCustumer(prompt("Enter type custumer:"));break;
+                case 55:do {
+                    custumer.disCount =prompt("Enter disscount:");
+                }while (!filteDiscount.test(custumer.getDiscount()));break;
+                case 56:do {
+                    custumer.numberOfAccompanying=parseInt(prompt("Enter number of accompanying:"));
+                }while (!FilteNumberOfAccompanying.test(custumer.getNumberOfAccompanying()));break;
+                case 57:custumer.setTypeRoom(prompt("Enter  type room:"));break;
+                case 58:do {
+                    custumer.rentday=parseInt(prompt("Enter rentday:"));
+                } while (!FilteRentday.test(custumer.getRentday()));break;
+                case 59:custumer.getSetTypeService(prompt("Enter type service:"));break;
+                default: alert("ko thay gi ca");
+            }
+        });
         return custumer;
     }
     /**
@@ -165,23 +159,23 @@
         employee.setNameEmployee(prompt("Enter name employee:"));
         do {
             employee.setIDcard(prompt("Enter idcard:"));
-        }while (!filteidcard.test(employee.idCard));
+        }while (!filteidcard.test(employee.getIDcard()));
         do{
             employee.setEmailEmployee(prompt("Enter Email:"));
-        }while (!filteEmail.test( employee.emailEmployee));
+        }while (!filteEmail.test( employee.getEmailEmployee()));
         do {
             employee.setBirthdayEmployee(prompt("Enter birthday employee:"));
 
-        }while (!filteBirthday.test(employee.birthdayEmployee));
+        }while (!filteBirthday.test(employee.getBirthdayEmployee()));
         //////////
         employee.setRegency( prompt("Enter regency:"));
         employee.setLocaEmployee(prompt("Enter location:"));
         do {
             employee.setPhoneNumber(prompt("Enter type employee:"));
-        }while (!filtePhonenumber.test(employee.phoneNumber));
+        }while (!filtePhonenumber.test(employee.getPhoneNumber()));
         do {
             employee.setSalary( prompt("Enter Salary:"));
-        }while (!FilteSalary.test(employee.salary));
+        }while (!FilteSalary.test(employee.getSalary()));
         return employee;
     }
 
@@ -192,13 +186,12 @@
     function printArrCustumer(arr) {
 
         for (let i=0;i<arr.length;i++){
-            document.write((i+1)+ "Name: "+arr[i].nameCustumer+"ID: "+arr[i].idCard+"<br/>");
+            document.write((i+1)+ ". Name: "+arr[i].nameCustumer+"ID: "+arr[i].idCard+"<br/>");
         }
     }
     function printArrEmployee(arr) {
-
         for (let i=0;i<arr.length;i++){
-            document.write((i+1)+ "Name: "+arr[i].nameCustumer+"ID: "+arr[i].idCard+"<br/>");
+            document.write((i+1)+ ". Name: "+arr[i].nameCustumer+"ID: "+arr[i].idCard+"<br/>");
         }
     }
 
