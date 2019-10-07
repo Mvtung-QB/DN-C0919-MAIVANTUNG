@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai10</title>
+</head>
+<body>
+<script>
+    //10.	Nhập một chuổi ký tự tuỳ ý, sau đó thực hiện công việc sau:
+    let str = prompt("enter your string! ");
+    document.write("In môi khí tự 1 dòng:<br/>");
+    for (let i=0;i<str.length; i++) {
+        document.write(str[i]+"<br/>");
+    }
+    // Đếm số từ có trong chuổi đã cho
+
+    let num=1;
+    str = str.trim();
+    for (let i=0;i<str.length-1; i++) {
+        if (str.charAt(i) ===" " && str.charAt(i+1)!== " "){
+            num++;
+        }
+    }
+    document.write("số từ có trong chuổi: " + num+"<br/>");
+    //Tần số xuất hiện của 1 từ
+    let arrStr = str.split(" ");
+    // Xóa kí tự trắng
+    for (let i=0;i<arrStr.length; i++) {
+        if(arrStr[i]===" "){
+            arrStr.splice(i,1);
+        }
+    }
+    let word;
+    let tanso =1;
+    while (arrStr.length>1){
+        word = arrStr[0];
+        for (let i=1;i<arrStr.length; i++) {
+            if(arrStr[i]=== word){
+                arrStr.splice(i,1);
+                tanso++;
+            }
+        }
+        document.write(word+ " Tần số: "+ tanso+ "<br/>");
+        tanso=1;
+        arrStr.splice(0,1);
+    }
+</script>
+</body>
+</html>

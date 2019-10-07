@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai7</title>
+</head>
+<body>
+<script>
+    //7.	Tính tổng và tích các chữ số của một số nguyên dương m cho trước (Ví dụ : m=234=> S=2+3+4=9, P=2*3*4=24)
+    let s=0;
+    let t=1;
+    let n= Number.parseInt(prompt("enter N"));
+    let i=0;
+    do {
+        i = n%10;
+        if (i!==0){
+            t*=i;
+            s+=i;
+        }
+        n=n/10;
+        n=Number.parseInt(n);
+    }while (n>0);
+    document.write("Tong cac chu so: "+s+"  Tich cac chu so:  "+t);
+</script>
+</body>
+</html>

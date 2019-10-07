@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //9.	Nhập vào một chuỗi ký tự  thực hiện công việc sau:
+    let str = prompt("enter your string! ");
+    document.write("Chuỗi đảo ngược<br/>");
+    for (let i=str.length-1;i>=0; i--) {
+        document.write(str[i]);
+    }
+    document.write("<br/> In Hoa: ");
+    document.write(str.toUpperCase());
+    document.write("<br/> In Thường: ");
+    document.write(str.toLowerCase());
+    document.write("<br/> Tráo Hoa thường: ");
+    let filter = /^[a-z]$/;
+    for (let i=0;i<str.length;i++) {
+        if (filter.test(str.charAt(i))) {
+            document.write(str.charAt(i).toUpperCase());
+        } else {
+            document.write(str.charAt(i).toLowerCase());
+        }
+
+    }
+
+</script>
+</body>
+</html>

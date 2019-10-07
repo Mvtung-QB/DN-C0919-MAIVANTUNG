@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //4.	Viết chương trình tính : S=15-1+1/2-1/3!+....+(-1)n  1/n!
+    let s=0;
+    let n = Number.parseInt(prompt("enter N"));
+    for (let i =1; i<=n;i++){
+        s+= 15+(-1*1/giaiThua(i));
+    }
+    function giaiThua(n) {
+        let gt =1;
+        for (let j =1; j<=n;j++){
+            gt*=j;
+        }
+        return gt;
+    }
+    document.write(s);
+</script>
+</body>
+</html>
