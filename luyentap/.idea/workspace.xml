@@ -1,111 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e65d2770-a273-47e5-9c86-27b96cae2474" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/luyentap.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../module1-MAIVANTUNG/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../module1-MAIVANTUNG/.idea/module1-MAIVANTUNG.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../module1-MAIVANTUNG/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../module1-MAIVANTUNG/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../module1-MAIVANTUNG/YeuCau1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../module1-MAIVANTUNG/YeuCau2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../module1-MAIVANTUNG/YeuCau3.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../session 3/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../session 3/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../session 3/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../session 3/.idea/session 3.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../session 3/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../session1/Mô tả thuật toán có cấu trúc điều kiện.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../session1/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../session1/Tính điểm trung bình.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../session1/[Bài tập] Mô tả thuật toán có cấu trúc lặp.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../session1/chuyển đổi tiền tệ.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../session1/demo.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../session2/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../session2/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../session2/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../session2/.idea/session 3.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../session2/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../session2/BTBienKieuDuLieuToanTu.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../session2/BTUngDungDoiTien.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../session2/BTUngDungMayTinh.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../session2/THKhaiBaoVaSuDungBien.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../session2/THSuDungToanTu.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../session3/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../session3/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../session3/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../session3/.idea/session4.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../session3/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../session3/1.2.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../session3/2.1.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../session3/2.2.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../session3/3.2.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../session3/BTCauLenhSwitch.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../session3/BTChiSoBMI.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../session3/BTDoYouLoveMe.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../session3/BTGoodFastCheap.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../session3/BTMayTinhDonGian.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../session3/Goodfastcheap.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../session3/Nobita.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../session3/THNamNhuan.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../session3/THSukienChuot.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../session3/THSwithCase.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../session3/THToanTu.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../session3/ThSuKienBanPhim.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../session3/anh2.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../session3/animaltion.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../session3/image.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../session4/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../session4/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../session4/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../session4/.idea/session4.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../session4/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../session4/BTDemSo.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../session4/BTDoanSo.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../session4/BTFibanaci.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../session4/BTFizzBuzz.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../session4/BTNhietDo.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../session4/BTSinhBangCuuChuong.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../session4/BTSo7.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../session4/BTSoNguyenTo.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../session4/BTTictactoe.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../session4/BTTinhGiaiThua.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../session4/BTTuDien.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../session4/BTVeTamGiac.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../session4/BTVeTraiTim.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../session4/THLongNhau.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../session4/THSuDungDoWhile.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../session4/THSuDungFor.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../session4/THSuDungWhile.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../session4/test.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../session5/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../session5/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../session5/.idea/session5.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../session5/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../session5/THCaro.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../session5/THDaoNguocMang.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../session5/THGiaTriLonNhat.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../session5/THThaoTacMang.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../session5/THTimKiem.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../session6/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../session6/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../session6/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../session6/.idea/session6.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../session6/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../session6/BTBinhPhuong.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../session6/BTDoiXung.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../session6/BTLuyenTap1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../session6/BTLuyentap.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../session6/BTMetersFeet.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../session6/BTQLySanPham.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../session6/BTSoNguyenTo.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../session6/THDoiNhietDo.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../session6/THGiaTriNhoNhat.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../session6/THOverwriteConfirm.html" beforeDir="false" />
-    </list>
+    <list default="true" id="49870842-2064-46ce-bfba-7fb38d4d9666" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -116,35 +12,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/giaithuat/Bai11.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="32" column="44" selection-start-line="32" selection-start-column="44" selection-end-line="32" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/giaithuat/Bai10.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="34" column="25" lean-forward="true" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/giaithuat/Bai9.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="5" column="7" lean-forward="true" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -171,6 +39,7 @@
         <option value="$PROJECT_DIR$/Bai10.html" />
         <option value="$PROJECT_DIR$/Bai11.html" />
         <option value="$PROJECT_DIR$/Bai12.html" />
+        <option value="$PROJECT_DIR$/Test.html" />
       </list>
     </option>
   </component>
@@ -193,11 +62,6 @@
               <item name="luyentap" type="b2602c69:ProjectViewProjectNode" />
               <item name="luyentap" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="luyentap" type="b2602c69:ProjectViewProjectNode" />
-              <item name="luyentap" type="462c0819:PsiDirectoryNode" />
-              <item name="giaithuat" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -209,7 +73,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../module1-MAIVANTUNG" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -240,10 +104,18 @@
       <workItem from="1570441917920" duration="132000" />
       <workItem from="1570442274210" duration="456000" />
     </task>
+    <task id="LOCAL-00001" summary="add test">
+      <created>1570499318938</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1570499318938</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21419000" />
+    <option name="totallyTimeSpent" value="22322000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -270,6 +142,11 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="abc" />
+    <MESSAGE value="add test" />
+    <option name="LAST_COMMIT_MESSAGE" value="add test" />
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Bai1.html" />
     <entry file="file://$PROJECT_DIR$/Bai2.html" />
@@ -280,27 +157,28 @@
     <entry file="file://$PROJECT_DIR$/Bai7.html" />
     <entry file="file://$PROJECT_DIR$/Bai8.html" />
     <entry file="file://$PROJECT_DIR$/Bai9.html" />
-    <entry file="file://$PROJECT_DIR$/Bai11.html" />
     <entry file="file://$PROJECT_DIR$/Bai10.html" />
-    <entry file="file://$PROJECT_DIR$/Bai12.html" />
-    <entry file="file://$PROJECT_DIR$/giaithuat/Bai11.html">
+    <entry file="file://$PROJECT_DIR$/giaithuat/Bai11.html" />
+    <entry file="file://$PROJECT_DIR$/giaithuat/Bai10.html" />
+    <entry file="file://$PROJECT_DIR$/giaithuat/Bai9.html" />
+    <entry file="file://$PROJECT_DIR$/Test.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="32" column="44" selection-start-line="32" selection-start-column="44" selection-end-line="32" selection-end-column="44" />
+        <state relative-caret-position="153">
+          <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/giaithuat/Bai10.html">
+    <entry file="file://$PROJECT_DIR$/Bai11.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="34" column="25" lean-forward="true" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="25" />
+        <state relative-caret-position="340">
+          <caret line="20" column="16" lean-forward="true" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/giaithuat/Bai9.html">
+    <entry file="file://$PROJECT_DIR$/Bai12.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="5" column="7" lean-forward="true" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+        <state relative-caret-position="173">
+          <caret line="24" column="32" lean-forward="true" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
         </state>
       </provider>
     </entry>
