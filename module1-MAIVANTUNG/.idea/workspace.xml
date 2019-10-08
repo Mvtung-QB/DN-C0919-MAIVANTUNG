@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="083b9682-6da7-497c-95f7-eed7882cbb14" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../luyentap/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../luyentap/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/YeuCau1.html" beforeDir="false" afterPath="$PROJECT_DIR$/YeuCau1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/YeuCau3.html" beforeDir="false" afterPath="$PROJECT_DIR$/YeuCau3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/YeuCau4.html" beforeDir="false" afterPath="$PROJECT_DIR$/YeuCau4.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/YeuCau5+6.html" beforeDir="false" afterPath="$PROJECT_DIR$/YeuCau5+6.html" afterDir="false" />
-    </list>
+    <list default="true" id="083b9682-6da7-497c-95f7-eed7882cbb14" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +65,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../luyentap/Bai12.html" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../luyentap" />
     <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.file-colors" />
   </component>
   <component name="RunDashboard">
@@ -114,17 +107,25 @@
       <workItem from="1570500182456" duration="4093000" />
       <workItem from="1570505349998" duration="630000" />
       <workItem from="1570510167257" duration="665000" />
-      <workItem from="1570516942732" duration="731000" />
+      <workItem from="1570516942732" duration="978000" />
     </task>
+    <task id="LOCAL-00001" summary="up caseStudy">
+      <created>1570517746959</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1570517746959</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34162000" />
+    <option name="totallyTimeSpent" value="34409000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13616072" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13616072" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -135,7 +136,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="8" visible="true" weight="0.32843137" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -178,6 +179,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="up caseStudy" />
+    <option name="LAST_COMMIT_MESSAGE" value="up caseStudy" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/../luyentap/Bai12.html">
