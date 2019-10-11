@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let str = "abcdeebcCabdda";
+    let arr = [];
+    let giaTri;
+    for (let i = 0; i < str.length; i++) {
+        for (let j = i + 1; j < str.length; j++) {
+            if (str.charAt(i) === str.charAt(j)) {
+                // Trả về chuỗi có cấu trức (Bắt đầu xâu + vị trí bắt đầu + vị trí kết thúc + Độ dài xâu)
+                giaTri = str.charAt(i) + "-" + i + "-" + j + "-" + (j - i);
+                arr.push(giaTri);
+                break;  // Thoát khỏi vòng for bên trong
+            } else if (str.charAt(i) !== str.charAt(j) && j === str.length - 1) {
+                // Trả về chuỗi có cấu trức (Bắt đầu xâu + vị trí bắt đầu + vị trí kết thúc + Độ dài xâu)
+                giaTri = str.charAt(i) + "-" + i + "-" + j + "-" + (j - i);
+                arr.push(giaTri);
+            }
+        }
+    }
+    let max = layDodai(arr[0]);;
+
+    for (let n = 0; n < arr.length; n++) {
+        if (max < layDodai(arr[n])) {
+            max = layDodai(arr[n]);
+        }
+    }
+    document.write("Độ dài lớn nhất: "+ max+"<br/>");
+
+    // in  xâu dài nhất
+    for (let n = 0; n < arr.length; n++) {
+        if (layDodai(arr[n])=== max)
+        document.write(str.substring(layDiemBatDau(arr[n]),layDiemKetThuc(arr[n])+1) + "<br/>");
+    }
+
+    /**
+     * function lay vi tri dau cua chuoi
+     * @param chuoi
+     * @returns {number}
+     */
+
+    function layDiemBatDau(chuoi) {
+        let dem = 0;
+        let fist;
+        for (let i = 0; i < chuoi.length; i++) {
+            if (chuoi.charAt(i) === "-") {
+                dem++;
+                if (dem == 2) {
+                    fist = chuoi.charAt(2, i);
+                }
+            }
+        }
+        return Number.parseInt(fist);
+    }
+
+    /**
+     * function lấy Diểm kết thúc chuội
+     * @param chuoi
+     * @returns {number}
+     */
+    function layDiemKetThuc(chuoi) {
+        return layDodai(chuoi) + layDiemBatDau(chuoi);
+    }
+
+    /**
+     * function cắt chuỗi lấy độ  dài
+     * @param chuoi
+     * @returns {number}
+     */
+    function layDodai(chuoi) {
+        let dodai;
+        for (let i = chuoi.length - 1; i > 0; i--) {
+            if (chuoi.charAt(i) === "-") {
+                dodai = chuoi.substring(i + 1, chuoi.length);
+                break;
+            }
+        }
+        return Number.parseInt(dodai);
+    }
+</script>
+</body>
+</html>
